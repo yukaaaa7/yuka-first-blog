@@ -4,13 +4,13 @@
     </head>
     <body>
         <div>
-            <h1><a href="">Yuka's Blog</a></h1>
+            <h1><a href="/"> Yuka's blog </a></h1>
         </div>
 
         <div>
-            <p>published: 17.12.2016, 02:22pm </p>
-            <h2><a href="">My first post</a></h2>
-            <p>Thanks for reading my first post! Enjoy your visit.</p>
+          {% for post in posts %}
+            {{ post }}
+          {% endfor %}
         </div>
 
         <div>
